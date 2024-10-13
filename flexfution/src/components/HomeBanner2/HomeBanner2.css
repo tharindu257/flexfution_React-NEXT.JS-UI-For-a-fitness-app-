@@ -1,0 +1,71 @@
+/* Main container for the Swiper */
+.mySwiper {
+    width: 100%; /* Full width of the parent container */
+    height: 400px; /* Fixed height for the Swiper */
+    margin: 20px 0; /* Margin above and below the Swiper */
+    overflow: hidden; /* Hide overflow to prevent scrollbar */
+}
+
+/* Style for each slide */
+.swiper-slide {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-end; /* Align content at the bottom */
+    background-size: cover; /* Cover the entire slide area with the image */
+    background-position: center; /* Center the image in the slide */
+    color: white; /* White text color for contrast */
+    position: relative; /* Position relative for absolute children */
+    border-radius: 10px; /* Rounded corners for slides */
+    overflow: hidden; /* Hide overflow to maintain rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+/* Hover effect for slides */
+.swiper-slide:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Content inside each slide */
+.swiper-slide-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for better text visibility */
+    padding: 15px; /* Increased padding around text content */
+    border-radius: 8px; /* Rounded corners for content box */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow for depth */
+}
+
+/* Heading style inside each slide */
+.swiper-slide h2 {
+    font-size: 1.8rem; /* Increased font size for workout type heading */
+    margin: 0; /* Remove default margin */
+}
+
+/* Paragraph style inside each slide */
+.swiper-slide p {
+    font-size: 1.2rem; /* Increased font size for duration text */
+    margin: 5px 0 0; /* Margin above and below paragraph */
+}
+
+/* Pagination bullets style */
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.5); /* Light color for inactive bullets with better contrast */
+}
+
+/* Active pagination bullet style */
+.swiper-pagination-bullet-active {
+    background-color: white; /* Bright color for active bullet */
+}
+
+/* Adjusting navigation buttons size and color (if needed) */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white; /* Color of navigation arrows */
+    width: 40px; /* Width of navigation buttons */
+    height: 40px; /* Height of navigation buttons */
+}
+
+/* Optional hover effect on navigation buttons (if desired) */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}

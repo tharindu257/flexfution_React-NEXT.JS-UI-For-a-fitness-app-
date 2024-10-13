@@ -1,0 +1,91 @@
+/* Main container for the workout page */
+.workout {
+    padding: 20px; /* Padding around the main container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners for the main container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Main heading style */
+.mainhead1 {
+    font-size: 2.5rem; /* Larger font size for the main heading */
+    color: #333; /* Dark gray color for text */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+/* Container for exercises */
+.workout__exercises {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack exercises vertically */
+}
+
+/* Style for each exercise */
+.workout__exercise {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 15px; /* Padding around each exercise */
+    margin-bottom: 15px; /* Space between exercises */
+    background-color: white; /* White background for each exercise */
+    border-radius: 8px; /* Rounded corners for exercises */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for exercises */
+.workout__exercise:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Reverse layout for alternate exercises */
+.workout__exercise--reverse {
+    flex-direction: row-reverse; /* Reverse the order of items */
+}
+
+/* Image container style */
+.workout__exercise__image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 100px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for exercise content area */
+.workout__exercise__content {
+    margin-left: 15px; /* Space between image and content text */
+}
+
+/* Heading style inside each exercise content */
+.workout__exercise__content h2 {
+    font-size: 1.5rem; /* Font size for exercise name */
+    color: #007bff; /* Blue color for exercise name */
+}
+
+/* Style for sets and reps information */
+.workout__exercise__content span {
+    font-size: 1rem; /* Font size for sets/reps information */
+    color: #666; /* Gray color for less emphasis */
+}
+
+/* Description paragraph style */
+.workout__exercise__content p {
+    font-size: 0.9rem; /* Smaller font size for description text */
+    color: #444; /* Darker gray color for description text */
+}
+
+/* Centering styles to enhance readability and aesthetics */
+
+.workout__exercises {
+    max-width: 800px; /* Limit width to enhance readability on larger screens*/
+    margin: auto; /* Center the exercises container horizontally*/
+}
+
+.workout__exercise {
+    justify-content: space-between; /* Space between image and content text*/
+}
+
+.workout__exercise h2,
+.workout__exercise span,
+.workout__exercise p {
+    margin: 5px 0; /* Consistent vertical spacing between text elements*/
+}
